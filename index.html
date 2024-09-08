@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Platform</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="header">
+
+    <h1>Hexi (name pending, not licensed)</h1>
+    <br />
+    <nav>
+        <ul>
+
+          <li><a href="#products">Products</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#stripe">Stripe Connect</a></li>
+        </ul>
+      </nav>
+      <div class="intro">
+    <p>
+      This is a placeholder website for my mobile app and Stripe Connect
+      integration.
+    </p>
+    <p>
+      Hexi is a mobile app that allows users to sort men's & women's clothing
+      products by hex code.
+    </p>
+    </div>
+    </div>
+    <br />
+    <image src="./assets/product_search.jpg" alt="product card" class="img clickable-image" onclick="enlargeImage(this)" />
+    <br />
+    <div class="top">
+    <h2>Users can search by:</h2>
+    <br />
+    <ul class="ul-1">
+      <li>-Manually entering exact hex code (up to 2 colors)</li>
+      <li>-Selecting color from gradient wheel (up to 2 colors)</li>
+      <li>-Getting color palette from image upload</li>
+    </ul>
+
+    <br />
+    <p><u><i>(with metallic/non-metallic options for all searches)</i></u></p>
+    <br />
+    <div class="image-container">
+        <img src="./assets/manual_hex.jpg"  alt="manual hex entry" class="clickable-image" onclick="enlargeImage(this)"/>
+      <img src="./assets/gradient.jpg"  alt="color wheel" class="clickable-image" onclick="enlargeImage(this)"/>
+      <img src="./assets/image_palette.jpg"  alt="image palette" class="clickable-image" onclick="enlargeImage(this)"/>
+    </div>
+    </div>
+    <br />
+    <br />
+    <div id="products" class="middle">
+    <h2><u>Products Include:</u></h2>
+    <br />
+      <h4><b>Tops (casual/athletic)</b></h4>
+      <br />
+      <ul class="ul-2">
+        <li>Short Sleeve</li>
+        <li>Long Sleeve</li>
+        <li>Tank Tops</li>
+        <li>Polos</li>
+        <li>Button Downs</li>
+        <li>Sweaters</li>
+        <li>Night Out</li>
+        <li>Flannels/Plaid</li>
+        <li>Off-The-Shoulder</li>
+        <li>Graphic Tees</li>
+        <li>Blazers</li>
+        <li>And More...</li>
+      </ul>
+      <br />
+      <hr />
+      <br />
+      <h4><b>One Piece (casual/athletic)</b></h4>
+      <br />
+      <ul class="ul-2">
+        <li>Dresses</li>
+        <li>Jumpsuits</li>
+        <li>Rompers</li>
+        <li>Bodysuits</li>
+      </ul>
+      <br />
+      <hr />
+      <br />
+      <h4><b>Bottoms (casual/athletic)</b></h4>
+      <br />
+      <ul class="ul-2">
+        <li>Pants</li>
+        <li>Leggings</li>
+        <li>Skirts</li>
+        <li>Shorts</li>
+        <li>And More...</li>
+      </ul>
+      <br />
+      <hr />
+      <br />
+      <h4><b>Shoes</b></h4>
+      <br />
+      <ul class="ul-2">
+        <li>Athletic</li>
+        <li>Sneakers</li>
+        <li>Boots</li>
+        <li>Heels</li>
+        <li>Flats & Sandals</li>
+      </ul>
+      <br />
+      <hr />
+      <br />
+      <h4><b>Outerwear</b></h4>
+        <br />
+      <ul class="ul-2">
+        <li>Jackets</li>
+        <li>Coats</li>
+      </ul>
+
+</div>
+    <br />
+    <br />
+    <div id="reviews" class="bottom">
+    <h2>User Reviews</h2>
+    <br />
+    <p>
+      Users can leave reviews on products, rating color accuracy from online to in person.
+    </p>
+    <br />
+    <image src="./assets/review.jpg" alt="review" class="img clickable-image" onclick="enlargeImage(this)"/>
+    </div>
+    <br />
+    <br />
+    <div id="stripe" class="footer">
+    <h2>Stripe Connect Integration with Multiple Vendors</h2>
+    <br />
+    <p>
+      <u><i>(Actual vendors to be determined)</i></u>
+    </p>
+    <br />
+    <p>
+      Users can purchase products from multiple vendors in one transaction.
+    </p>
+    </div>
+
+    <br />
+    <br />
+    <p>This is a temporary website, so minimal styling was applied. Actual website on domain to come. </p>
+    <p>(once domain name has been purchased)</p>
+
+    <div id="image-modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-image">
+      </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
